@@ -1,0 +1,49 @@
+@import "../../common_assets/scss/variables";
+
+.callout,
+.warning {
+  margin: 0 0 $grid-unit;
+  padding: 1.25rem;
+  border: 0 solid;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  &:before {
+    line-height: 1;
+    font-size: 3rem;
+    font-family: 'Material Icons';
+    padding-right: 1.25rem;
+  }
+  h3 {
+    margin-top: 0 !important;
+    a {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  p:last-child, & * > p:last-child {
+    margin-bottom: 0;
+  }
+}
+.callout {
+  border-color: #73a1ca;
+  background-color: rgba(115, 161, 202, 0.15);
+  &:before {
+    color: #73a1ca;
+    content: '\e88e'
+  }
+}
+.warning {
+  border-color: #cec58e;
+  background-color: rgba(193, 185, 135, 0.175);
+  &:before {
+    color: #cec58e;
+    content: '\e002'
+  }
+}
+.callout+.callout,
+.callout+.warning,
+.warning+.warning,
+.warning+.callout {
+  margin-top: 1.25rem;
+}

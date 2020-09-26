@@ -1,0 +1,130 @@
+@import '_base';
+
+html {
+  margin-right: 0 !important;
+}
+
+.l-titlebar .g-breadcrumbs {
+  font-size: 1rem;
+}
+
+body.page-template-default:not(.home) .l-canvas, body.post-template-default .l-canvas {
+  padding-bottom: 5rem;
+  .w-post-elm.post_title {
+    padding-top: 22px !important;
+    padding-bottom: 0 !important;
+  }
+  .header-image+.l-section .w-post-elm.post_title {
+    padding-top: 0 !important;
+  }
+  #page-content {
+    & > .l-section:not(:nth-of-type(-n+2))  {
+      padding-top: 0;
+    }
+    & > .l-section:not(:first-of-type)  {
+      padding-bottom: 0;
+    }
+  }
+  .l-content {
+    .l-section:not(:first-child) {
+      padding-top: 0;
+    }
+    .l-section:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
+  .l-section:not(.for_blognav) .l-section-h {
+    max-width: 44rem !important;
+  }
+  .g-cols.offset_medium {
+    margin: 0;
+    > div.vc_column_container {
+      padding: 0 !important;
+      & >.vc_column-inner {
+        padding: 0 !important;
+        .w-image {
+          margin-bottom: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .w-image-h {
+    text-align: center !important;
+  }
+}
+.w-tabs.accordion .w-tabs-section {
+  border-width: 1px 1px 0 1px;
+  &.active {
+    .w-tabs-section-header {
+      background-color: #e8e8e8;
+    }
+  }
+  .w-tabs-section-header:hover {
+    background-color: #e8e8e8 !important;
+  }
+  .w-tabs-section-content {
+    padding: 1rem;
+    .w-tabs-section-content-h{
+      padding: 10px 20px 30px;
+    }
+  }
+}
+
+@keyframes fadeInOnLoad {
+  0%,50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.header-image {
+  padding-bottom: 6px;
+  .img-container {
+    background: white url(img/icon-image-128.png) 50% no-repeat;
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    &.fade-in-on-load {
+      animation-duration: .5s;
+      animation-name: fadeInOnLoad;
+    }
+  }
+  .caption {
+    padding: 1.25rem 2rem 1rem;
+    margin-top: 0 !important;
+    //font-size: 0.833rem;
+    font-family: $sans-alt;
+    /* text-align: center; */
+    position: relative;
+    top: -.5rem;
+    color: white;
+    background-color: rgb(130, 161, 128);
+    width: auto;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.45);
+    a {
+      text-decoration: underline;
+      color: white !important;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.l-main {
+  .w-image {
+    margin-bottom: 0 !important;
+    .us-frame {
+      text-align: center;
+    }
+  }
+  .caption {
+    margin-top: 0.5rem;
+  }
+}
+
+.error404 {
+  .l-main {
+    padding-top: 64px;
+  }
+}

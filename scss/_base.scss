@@ -1,0 +1,21 @@
+@import "bourbon/bourbon";
+@import "categories";
+@import "isotope";
+
+$primary-color: #5f865c;
+$primary-gradient: linear-gradient(to bottom, #628a5f, #5c8259 100%);
+$body-color: #3e3d40;
+$menu-font: 'Asap';
+$sans: "Open Sans";
+$sans-alt: "Khula";
+$serif: Georgia, "Times New Roman", Times, serif;
+$icon-family: "Material Icons";
+
+$link-color: #4075a5;
+$link-hover-color: black;
+
+$grid-unit: 1.55rem;
+
+body {
+  background-color: white !important;
+}

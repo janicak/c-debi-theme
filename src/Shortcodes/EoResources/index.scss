@@ -1,0 +1,92 @@
+@import "../../common_assets/scss/bourbon/bourbon";
+@import "../../common_assets/scss/variables";
+@import "../../common_assets/scss/isotope";
+
+.eo-resources .eo-filters {
+  display: flex;
+  margin-bottom: 1rem;
+  .eo-filter {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    .label {
+      font-weight: bold;
+    }
+    select {
+      border: 1px solid #d7e0da;
+    }
+  }
+}
+.eo-resources .c-debi-accordion {
+  .section {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #dadada;
+    width: 100%;
+    background-color: white;
+    &:last-of-type {
+      border-bottom-width: 1px;
+    }
+    &.active {
+      .section-title .details {
+        @include background-image(linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(0,0,0,.08) 10%));
+        .toggle {
+          transform: rotate(180deg);
+        }
+      }
+      .section-content {
+        display: inherit;
+        opacity: 0;
+        transition: opacity 0.4s;
+        &.ready {
+          opacity: 1;
+        }
+      }
+    }
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5 {
+        margin: 0 !important;
+      }
+      .details {
+        &:hover {
+          @include background-image(linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(0,0,0,.08) 10%));
+          cursor: pointer;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        min-width: 200px;
+        .label {
+          padding-right: 1rem;
+          font-family: $sans;
+          font-weight: 600;
+        }
+        .toggle {
+          font-size: 28px;
+          font-family: 'Material Icons';
+          transition: transform 0.3s;
+          transform: rotate(0deg);
+          &:before {
+            content: 'keyboard_arrow_down';
+          }
+        }
+      }
+    }
+    .section-content {
+      display: none;
+      margin: 2rem 1rem;
+      .organizations, .audience, .resource-type {
+        .label {
+          font-weight: 600 !important;
+        }
+      }
+      .description {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

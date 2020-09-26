@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "C_DEBI_Theme\\": "src/"
+    }
+  },
+  "require": {
+    "eftec/bladeone": "^3.46",
+    "eftec/bladeonehtml": "^1.5",
+    "wpackio/enqueue": "^2.2"
+  }
+}

@@ -1,0 +1,164 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "53ff5d32d29ca02f90d1d2dc5a35ed52",
+    "packages": [
+        {
+            "name": "eftec/bladeone",
+            "version": "3.46.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOne.git",
+                "reference": "bb93f7852d2ef688073ca927753f2952adc49e4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/bb93f7852d2ef688073ca927753f2952adc49e4f",
+                "reference": "bb93f7852d2ef688073ca927753f2952adc49e4f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.5.4"
+            },
+            "suggest": {
+                "eftec/bladeonehtml": "Extension to create forms",
+                "ext-mbstring": "This extension is used if it's active"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeone\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOne",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "time": "2020-08-05T13:06:44+00:00"
+        },
+        {
+            "name": "eftec/bladeonehtml",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOneHtml.git",
+                "reference": "b10463e20550945b78bae2d0e4375f43fe38fb8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOneHtml/zipball/b10463e20550945b78bae2d0e4375f43fe38fb8e",
+                "reference": "b10463e20550945b78bae2d0e4375f43fe38fb8e",
+                "shasum": ""
+            },
+            "require": {
+                "eftec/bladeone": "^3.43",
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeonehtml\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOneHtml",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "time": "2020-06-07T20:28:25+00:00"
+        },
+        {
+            "name": "wpackio/enqueue",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swashata/wpackio-enqueue.git",
+                "reference": "596fb1d6af97b96906058237165f3fe161ffa685"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swashata/wpackio-enqueue/zipball/596fb1d6af97b96906058237165f3fe161ffa685",
+                "reference": "596fb1d6af97b96906058237165f3fe161ffa685",
+                "shasum": ""
+            },
+            "require-dev": {
+                "brain/monkey": "^2.2.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "giacocorsiglia/wordpress-stubs": "^4.9.5",
+                "pcov/clobber": "^2.0",
+                "phpcompatibility/phpcompatibility-wp": "^2.1.0",
+                "phpunit/phpunit": "^7.3.0",
+                "spatie/phpunit-snapshot-assertions": "^1.3.1",
+                "wp-coding-standards/wpcs": "^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WPackio\\": "inc"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Swashata Ghosh",
+                    "email": "swashata4u@gmail.com"
+                }
+            ],
+            "description": "API to enqueue assets generated by @wpackio/scripts into your WordPress plugin or theme.",
+            "time": "2020-06-22T03:45:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,35 @@
+#update-json-button, #populate-fields {
+  margin-top: 0.5rem;
+}
+
+.acf-field th ul {
+  font-size: 0.8rem;
+}
+
+table.entity-matches {
+  background-color: white;
+  border: 1px solid #888;
+  border-collapse: collapse;
+}
+
+table.entity-matches th, table.entity-matches td {
+  border: 1px solid #888;
+  padding: .5rem;
+}
+
+table.entity-matches thead {
+  background-color: #ddd;
+}
+
+table.entity-matches tr[data-status="needs-update"] {
+  background-color: #ffffc4;
+}
+
+table.entity-matches tr[data-status="up-to-date"] {
+  background-color: #deffcd;
+}
+
+table.entity-matches tr[data-status="missing"] {
+  background-color: #ffd8da;
+}
+/*# sourceMappingURL=admin.css.map */

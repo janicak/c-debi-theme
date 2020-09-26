@@ -1,0 +1,121 @@
+@mixin category($icon, $family, $color) {
+  color: $color;
+  border-color: $color;
+
+  & .icon::before {
+    content: $icon;
+    color: $color;
+    font-family: $family;
+  }
+  &.background-color {
+    background-color: $color;
+  }
+  &.background-gradient {
+    background: linear-gradient(to bottom, $color 0%, #6f8a72 100%);
+  }
+}
+
+$icon: "\e0b7";
+$family: 'Material Icons';
+$color: #495584;
+.announcement {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e263";
+$family: 'Material Icons';
+$color: #9dad50;
+.award {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e6c4";
+$family: "Material Icons";
+$color: #ab92a3;
+.dataset {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e80c";
+$family: 'Material Icons';
+$color: #9676a0;
+.education-and-outreach {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e8f9";
+$family: 'Material Icons';
+$color: rgb(160,137,111);
+.employment {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e878";
+$family: 'Material Icons';
+$color: rgb(106, 144, 97);
+.meetings-and-activities {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e0be";
+$family: 'Material Icons';
+$color: #7bad7b;
+.newsletter {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e80b";
+$family: 'Material Icons';
+$color: #c5c5c5;
+.page-type {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e7fd";
+$family: 'Material Icons';
+$color: #9976ab;
+.person {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e029";
+$family: 'Material Icons';
+$color: rgb(118, 119, 167);
+.press {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e6c4";
+$family: "Material Icons";
+$color: #ab92a3;
+.data_project {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e7f4";
+$family: 'Material Icons';
+$color: rgb(148, 146, 73);
+.proposal-call {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e14f";
+$family: 'Material Icons';
+$color: #b1b6b4;
+.protocol {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e54b";
+$family: 'Material Icons';
+$color: #988e7c;
+.publication {
+  @include category($icon, $family, $color);
+}
+
+$icon: "\e3e4";
+$family: 'Material Icons';
+$color: rgb(173, 177, 121);
+.spotlight {
+  @include category($icon, $family, $color);
+}

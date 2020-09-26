@@ -1,0 +1,53 @@
+@import 'base';
+
+$input-hover-color: #f3f3f3;
+$label-font-size: 0.833rem;
+
+// MailChimp Grid form
+.grid-form{
+  [data-row-span] {
+    @media only screen and (min-width: 700px) {
+      display: flex;
+      flex-direction: row;
+      align-content: stretch;
+      [data-field-span]{
+        &.focus {
+          background: inherit !important;
+        }
+        &:hover {
+          background: $input-hover-color !important;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        label:first-child {
+          font-family: $sans-alt;
+          font-size: $label-font-size;
+        }
+      }
+    }
+  }
+  input {
+    font-family:  $sans-alt;
+    font-size: 1rem;
+    padding-top: .25rem;
+    margin-top: 1rem;
+    &[type="submit"] {
+      background-color: $primary-color !important;
+      @include transition(background-color 0.25s ease !important);
+      &:hover {
+        background-color: #75a471 !important;
+        box-shadow: 0 2px 1px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3) !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

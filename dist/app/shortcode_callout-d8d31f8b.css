@@ -1,0 +1,20 @@
+/*!
+ * 
+ * cdebiTheme
+ * 
+ * @author 
+ * @version 0.1.0
+ * @link UNLICENSED
+ * @license UNLICENSED
+ * 
+ * Copyright (c) 2020 
+ * 
+ * This software is released under the UNLICENSED License
+ * https://opensource.org/licenses/UNLICENSED
+ * 
+ * Compiled with the help of https://wpack.io
+ * A zero setup Webpack Bundler Script for WordPress
+ */
+.callout,.warning{margin:0 0 1.55rem;padding:1.25rem;border:0 solid;border-radius:.25rem;display:flex;align-items:center}.callout:before,.warning:before{line-height:1;font-size:3rem;font-family:"Material Icons";padding-right:1.25rem}.callout h3,.warning h3{margin-top:0 !important}.callout h3 a,.warning h3 a{display:none;visibility:hidden}.callout p:last-child,.callout *>p:last-child,.warning p:last-child,.warning *>p:last-child{margin-bottom:0}.callout{border-color:#73a1ca;background-color:rgba(115,161,202,.15)}.callout:before{color:#73a1ca;content:""}.warning{border-color:#cec58e;background-color:rgba(193,185,135,.175)}.warning:before{color:#cec58e;content:""}.callout+.callout,.callout+.warning,.warning+.warning,.warning+.callout{margin-top:1.25rem}
+
+/*# sourceMappingURL=shortcode_callout-d8d31f8b.css.map*/

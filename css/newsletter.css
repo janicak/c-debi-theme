@@ -1,0 +1,20 @@
+.single-newsletter article {
+  display: none;
+  visibility: hidden;
+}
+.single-newsletter section .l-section-h > .container {
+  margin-top: 64px !important;
+}
+.single-newsletter .l-section.content hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.single-newsletter .footerContainer[style] {
+  padding-left: 0 !important;
+  padding-top: 30px !important;
+}
+.single-newsletter .mainContainer[style], .single-newsletter td {
+  padding-left: 0 !important;
+}
+
+/*# sourceMappingURL=newsletter.css.map */

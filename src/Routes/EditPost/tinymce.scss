@@ -1,0 +1,50 @@
+@import "../../common_assets/scss/bourbon/bourbon";
+@import "../../common_assets/scss/variables";
+
+@include font-face("octicons", "../../common_assets/fonts/octicons", $file-formats: woff);
+
+.callout,
+.warning {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+  h3 {
+    margin-top: 0 !important;
+    a {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+.callout {
+  border-left-color: #5bc0de;
+}
+.warning {
+  border-left-color: #decd5b;
+}
+.callout+.callout,
+.callout+.warning,
+.warning+.warning,
+.warning+.callout {
+  margin-top: 1.25rem;
+}
+
+a.also, a.file, a.pdf {
+  margin-right: 3rem;
+  font-family: $sans-alt;
+  &::before {
+    padding-right: 0.25rem;
+    font-family: "octicons";
+  }
+}
+a.also::before {
+  content: "\f0b0";
+}
+a.file::before {
+  content: "\f011";
+}
+a.pdf::before {
+  content: "\f014";
+}

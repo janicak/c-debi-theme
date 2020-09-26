@@ -1,0 +1,256 @@
+@import "../../common_assets/scss/bourbon/bourbon";
+@import "../../common_assets/scss/variables";
+@import "../../common_assets/scss/loader";
+@import "slick";
+@import '../../common_assets/lib/slick/slick.css';
+
+@media (max-width: 970px){
+  .slick-prev, .slick-next {
+    top: calc(12.5rem - 54px);
+  }
+  .background {
+    min-height: 20rem;
+    .inset {
+      padding-top: 1rem;
+    }
+  }
+}
+
+section.home-slider {
+  .vc_col-sm-12 {
+    padding: 0 !important;
+    .vc_column-inner {
+      padding: 0 !important;
+      min-height: 25rem;
+      background: linear-gradient(to bottom, #4b6171 0%, #162318 100%);
+      .loader {
+        z-index: 500;
+        position: absolute;
+        top: calc(50% - 108px);
+        left: calc(50% - 120px);
+      }
+      .cdebi-slider {
+        max-height: 25rem;
+        opacity: 1;
+        transition: opacity 300ms ease;
+        @media (max-width: 970px) {
+          max-height: inherit;
+        }
+        &:not(.slick-initialized){
+          max-height: 25rem;
+          height: 25rem;
+          opacity: 0;
+        }
+        button, button:active, button:hover, button:focus {
+          box-shadow: 0 0 0 rgba(0,0,0,0) !important;
+        }
+        .item.slick-slide {
+          height: 100%;
+          min-height: 25rem;
+          width: 33%;
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          font-family: $sans;
+          @media (max-width: 970px) {
+            flex-direction: column-reverse;
+          }
+          .description {
+            width: calc(33% + 5rem);
+            padding: 1rem 2rem 3rem 5rem;
+            border-right: 1px solid rgba(0,0,0,.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.52);
+            @media (max-width: 970px) {
+              width: 100% !important;
+              padding-bottom: 4rem !important;
+              padding-left: 2rem;
+              border-right-width: 0 !important;
+              border-top: 1px solid rgba(0,0,0,.2);
+            }
+            .title {
+              font-size: 2.074rem;
+              font-weight: 500;
+              margin-bottom: .75rem;
+              line-height: 1.2;
+            }
+            .link {
+              margin-top: 1.75rem;
+              text-align: center;
+              text-shadow: 0 0 0 rgba(0,0,0,0);
+              a{
+                width: 100%;
+                padding: 0.5rem;
+                display: inline-block;
+                background-color: #6b9065;
+                color: white;
+                text-transform: uppercase;
+                &:hover {
+                  background-color: #7fab79;
+                  color: white !important;
+                  text-decoration: none !important;
+                }
+              }
+            }
+          }
+          &.deep-life {
+            .description {
+              @include background-image(url('../../common_assets/img/606.svg'), radial-gradient(circle, #3c3528 50%, #1d1d1d 100%));
+              background-size: 10rem 10rem, cover;
+            }
+          }
+          &.novel-organisms {
+            .description {
+              @include background-image(url('../../common_assets/img/605.svg'), radial-gradient(circle, #1f403a 50%, #1d1d1d 100%));
+              background-size: 7rem 7rem, cover;
+            }
+            .inset-images {
+              .container {
+                @media (min-width: 694px){
+                  width: 100%;
+                  display: flex !important;
+                  justify-content: center;
+                }
+                .inset-image {
+                  border: 4px solid white;
+                  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+                  @media (min-width: 694px){
+                    max-height: 13rem;
+                  }
+                }
+                .separator {
+                  @media (max-width: 694px) {
+                    width: 2vw !important;
+                  }
+                }
+              }
+            }
+          }
+          &.slow-growing {
+            .description {
+              @include background-image(url('../../common_assets/img/607.svg'), radial-gradient(circle, #331f13 50%, #1d1d1d 100%));
+              background-size: 10rem 10rem, cover;
+            }
+          }
+          &.global-implications {
+            .description {
+              @include background-image(url('../../common_assets/img/327-k.svg'), radial-gradient(circle, #302c50 50%, #1d1d1d 100%));
+              background-size: 2rem 2rem, cover;
+            }
+            .inset-images {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .inset-image {
+                max-height: 17rem !important;
+              }
+              .inset-caption {
+                margin-top: 1rem;
+              }
+            }
+          }
+          &.science-and-technology {
+            .description {
+              @include background-image(url('../../common_assets/img/717.svg'), radial-gradient(circle, #00455a 50%, #1d1d1d 100%));
+              background-size: 10rem 10rem, cover;
+            }
+            .background {
+              .inset-image {
+                height: 13rem;
+                border: 4px solid white;
+                box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+                max-height: 13rem;
+              }
+              @media (min-width:500px){
+                align-items: flex-end;
+                .inset {
+                  width: 100%;
+                  max-width: 100%;
+                  margin: auto 5rem;
+                  align-items: flex-end;
+                  .inset-caption {
+                    width: 305px;
+                  }
+                }
+              }
+            }
+          }
+          &.training-and-outreach {
+            .description {
+              @include background-image(url('../../common_assets/img/723.svg'), radial-gradient(circle, #33425d 50%, #1d1d1d 100%));
+              background-size: 15rem 15rem, cover;
+            }
+          }
+          .background {
+            position: relative;
+            max-height: 25rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: flex-end;
+            justify-content: flex-end;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px rgba(0,0,0,0.5);
+            @media (max-width: 970px){
+              max-height: inherit;
+            }
+            .inset {
+              max-width: 35rem;
+              margin: auto auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .inset-images {
+                max-width: calc(100vw - 10rem);
+                .container {
+                  display: table-row;
+                  .inset-image, .separator {
+                    display: table-cell;
+                  }
+                  .inset-image {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                  }
+                  .separator {
+                    width: calc(1rem + 8px);
+                  }
+                }
+                .inset-caption {
+                  margin-top: 0.5rem;
+                  padding: 0.5rem 1.25rem;
+                  background-color: rgba(0, 0, 0, 0.51);
+                }
+              }
+            }
+            .background-caption {
+              max-width: 75%;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+              padding: 0.5rem 1.25rem;
+              @include background-image(linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0 , 0.51) 25%));
+              @media (max-width:660px){
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 0;
+                border-radius: 0;
+                background: rgba(0, 0, 0, 0.51);
+              }
+            }
+            .background-spacer {
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

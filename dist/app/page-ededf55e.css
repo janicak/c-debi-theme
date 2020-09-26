@@ -1,0 +1,20 @@
+/*!
+ * 
+ * cdebiTheme
+ * 
+ * @author 
+ * @version 0.1.0
+ * @link UNLICENSED
+ * @license UNLICENSED
+ * 
+ * Copyright (c) 2020 
+ * 
+ * This software is released under the UNLICENSED License
+ * https://opensource.org/licenses/UNLICENSED
+ * 
+ * Compiled with the help of https://wpack.io
+ * A zero setup Webpack Bundler Script for WordPress
+ */
+body.page-template-default:not(.home) .l-canvas,body.post-template-default .l-canvas{padding-bottom:5rem}body.page-template-default:not(.home) .l-canvas .w-post-elm.post_title,body.post-template-default .l-canvas .w-post-elm.post_title{padding-top:22px !important;padding-bottom:0 !important}body.page-template-default:not(.home) .l-canvas .header-image+.l-section .w-post-elm.post_title,body.post-template-default .l-canvas .header-image+.l-section .w-post-elm.post_title{padding-top:0 !important}body.page-template-default:not(.home) .l-canvas #page-content>.l-section:not(:nth-of-type(-n+2)),body.post-template-default .l-canvas #page-content>.l-section:not(:nth-of-type(-n+2)){padding-top:0}body.page-template-default:not(.home) .l-canvas #page-content>.l-section:not(:first-of-type),body.post-template-default .l-canvas #page-content>.l-section:not(:first-of-type){padding-bottom:0}body.page-template-default:not(.home) .l-canvas .l-content .l-section:not(:first-child),body.post-template-default .l-canvas .l-content .l-section:not(:first-child){padding-top:0}body.page-template-default:not(.home) .l-canvas .l-content .l-section:not(:last-child),body.post-template-default .l-canvas .l-content .l-section:not(:last-child){padding-bottom:0}body.page-template-default:not(.home) .l-canvas .l-section:not(.for_blognav) .l-section-h,body.post-template-default .l-canvas .l-section:not(.for_blognav) .l-section-h{max-width:44rem !important}body.page-template-default:not(.home) .l-canvas .g-cols.offset_medium,body.post-template-default .l-canvas .g-cols.offset_medium{margin:0}body.page-template-default:not(.home) .l-canvas .g-cols.offset_medium>div.vc_column_container,body.post-template-default .l-canvas .g-cols.offset_medium>div.vc_column_container{padding:0 !important}body.page-template-default:not(.home) .l-canvas .g-cols.offset_medium>div.vc_column_container>.vc_column-inner,body.post-template-default .l-canvas .g-cols.offset_medium>div.vc_column_container>.vc_column-inner{padding:0 !important}body.page-template-default:not(.home) .l-canvas .g-cols.offset_medium>div.vc_column_container>.vc_column-inner .w-image,body.post-template-default .l-canvas .g-cols.offset_medium>div.vc_column_container>.vc_column-inner .w-image{margin-bottom:0;text-align:center}body.page-template-default:not(.home) .l-canvas .w-image-h,body.post-template-default .l-canvas .w-image-h{text-align:center !important}.w-tabs.accordion .w-tabs-section{border-width:1px 1px 0 1px}.w-tabs.accordion .w-tabs-section.active .w-tabs-section-header{background-color:#e8e8e8}.w-tabs.accordion .w-tabs-section .w-tabs-section-header:hover{background-color:#e8e8e8 !important}.w-tabs.accordion .w-tabs-section .w-tabs-section-content{padding:1rem}.w-tabs.accordion .w-tabs-section .w-tabs-section-content .w-tabs-section-content-h{padding:10px 20px 30px}@keyframes fadeInOnLoad{0%,50%{opacity:0}100%{opacity:1}}.header-image{padding-bottom:6px}.header-image .img-container{background:#fff url(assets/icon-image-128-5764c796.png) 50% no-repeat;width:100%}.header-image .image{width:100%}.header-image .image.fade-in-on-load{animation-duration:.5s;animation-name:fadeInOnLoad}.header-image .caption{padding:1.25rem 2rem 1rem;margin-top:0 !important;font-family:"Khula";position:relative;top:-0.5rem;color:#fff;background-color:#82a180;width:auto;text-shadow:.5px .5px .5px rgba(0,0,0,.45)}.header-image .caption a{text-decoration:underline;color:#fff !important}.header-image .caption a:hover{color:#fff !important}
+
+/*# sourceMappingURL=page-ededf55e.css.map*/

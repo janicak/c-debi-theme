@@ -1,0 +1,30 @@
+@import "../../common_assets/scss/variables";
+@import "../../common_assets/scss/bourbon/bourbon";
+
+$footer-family: $sans-alt;
+$footer-weight: 400;
+$footer-link-color: #B5D2C1;
+$footer-bg-gradient: linear-gradient(to bottom, #628a5f, #50714e 100%);
+
+footer.l-footer {
+  padding: 2rem 0 0 !important;
+  background-color: $primary-color !important;
+  @include background-image($footer-bg-gradient);
+  text-align: center;
+  font-family: $footer-family;
+  font-weight: $footer-weight;
+  color: white;
+  .widget {
+    margin-bottom: 0 !important;
+  }
+  a {
+    color: $footer-link-color !important;
+  }
+  img {
+    @include filter(brightness(300%));
+    margin: 0 .25rem;
+  }
+  td {
+    border-bottom: 0 none;
+  }
+}
