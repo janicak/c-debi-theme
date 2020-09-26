@@ -17,7 +17,7 @@ class Shortcodes {
             'warning' => 'C_DEBI_Theme\\Shortcodes\\Callout\\Shortcode',
             'eo-resources' => 'C_DEBI_Theme\\Shortcodes\\EoResources\\Shortcode',
             'cdebi-slider' => 'C_DEBI_Theme\\Shortcodes\\CDEBISlider\\Shortcode',
-            'mc4wp_gridform' => 'C_DEBI_Theme\\Shortcodes\\MC4WPGridform\\Shortcode',
+            'mc4wp_gridform' => 'C_DEBI_Theme\\Shortcodes\\MC4WPGridForm\\Shortcode',
             'news-grid' => 'C_DEBI_Theme\\Shortcodes\\NewsGrid\\Shortcode',
         ];
 
