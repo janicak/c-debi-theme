@@ -20,9 +20,9 @@ class BladeRunner extends BladeOne {
     public function __construct( $templatePath = null, $compiledPath = null, $mode = 0 ) {
         $stylesheet_dir = get_stylesheet_directory();
         $templatePath = [
-            $stylesheet_dir . '/src/views',
-            $stylesheet_dir . '/src/Routes',
-            $stylesheet_dir . '/src/Shortcodes',
+            $stylesheet_dir . '/src/views/',
+            $stylesheet_dir . '/src/Routes/',
+            $stylesheet_dir . '/src/Shortcodes/',
         ];
         $compiledPath = wp_upload_dir()[ 'basedir' ] . '/c-debi_theme';
         $mode = 5;
