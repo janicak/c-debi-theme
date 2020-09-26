@@ -12,7 +12,7 @@
     ];
 @endphp
 
-@include('Frontend.components.bco_dmo_metadata_table', [ 'entity' => $entity, 'field_config' => $bco_dmo_metadata_field_config ])
+@include('FrontEnd.components.bco_dmo_metadata_table', [ 'entity' => $entity, 'field_config' => $bco_dmo_metadata_field_config ])
 
 @php
     $description_fields = [];
@@ -32,20 +32,20 @@
 
 @foreach($description_fields as $field_name => $config)
     @php ['label' => $label, 'value' => $value] = $config; @endphp
-    @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => $label])
-    @include('Frontend.components.bco_dmo_description_field', ['value' => $value, 'field_name' => $field_name])
+    @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => $label])
+    @include('FrontEnd.components.bco_dmo_description_field', ['value' => $value, 'field_name' => $field_name])
 @endforeach
 
 @if(count($entity->acf_fields['dataset_instruments']))
-    @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => 'Instruments'])
-    @include('Frontend.components.dataset_instruments_table', [
+    @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => 'Instruments'])
+    @include('FrontEnd.components.dataset_instruments_table', [
         'instruments' => $entity->acf_fields['dataset_instruments']
     ])
 @endif
 
 @if(count($entity->acf_fields['dataset_parameters']))
-    @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => 'Parameters'])
-    @include('Frontend.components.dataset_parameters_table', [
+    @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => 'Parameters'])
+    @include('FrontEnd.components.dataset_parameters_table', [
         'parameters' => $entity->acf_fields['dataset_parameters']
     ])
 @endif
@@ -57,8 +57,8 @@
 @foreach($people as $field)
     @php ['label' => $field_label, 'people' => $field_rows] = $field; @endphp
     @if($field_rows && $field_label === 'Dataset Maintainers')
-        @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => $field_label])
-        @include('Frontend.components.bco_dmo_people_table', [
+        @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => $field_label])
+        @include('FrontEnd.components.bco_dmo_people_table', [
             'field_rows' => $field_rows, 'post_type' => 'dataset'
         ])
     @endif
@@ -69,8 +69,8 @@
 @endphp
 
 @foreach($data_projects as $data_project)
-    @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => 'BCO-DMO Project Info'])
-    @include('Frontend.layout.data_project_content', ['entity' => $data_project, 'embedded' => true ])
+    @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => 'BCO-DMO Project Info'])
+    @include('FrontEnd.layout.data_project_content', ['entity' => $data_project, 'embedded' => true ])
 @endforeach
 
 @endspaceless()

@@ -13,7 +13,7 @@
                 <div class="items">
                     @foreach($items as $item)
                         <div class="item">
-                            @include('Frontend.layout.entity_search_result', ['entity' => $item, 'title_link_modal' => false])
+                            @include('FrontEnd.layout.entity_search_result', ['entity' => $item, 'title_link_modal' => false])
                         </div>
                         @if(!$loop->last)
                             <div class="separator"></div>

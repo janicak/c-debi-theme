@@ -10,7 +10,7 @@
     ];
 @endphp
 
-@include('Frontend.components.bco_dmo_metadata_table', [ 'entity' => $entity, 'field_config' => $bco_dmo_metadata_field_config ])
+@include('FrontEnd.components.bco_dmo_metadata_table', [ 'entity' => $entity, 'field_config' => $bco_dmo_metadata_field_config ])
 
 @php
     $description_fields = [];
@@ -32,8 +32,8 @@
         ['label' => $label, 'value' => $value] = $field_info;
         $header_tag = $embedded ? 'h5' : 'h4';
     @endphp
-    @include('Frontend.components.content_section_header', ['tag' => $header_tag, 'value' => $label])
-    @include('Frontend.components.bco_dmo_description_field', ['value' => $value, 'field_name' => $field_name])
+    @include('FrontEnd.components.content_section_header', ['tag' => $header_tag, 'value' => $label])
+    @include('FrontEnd.components.bco_dmo_description_field', ['value' => $value, 'field_name' => $field_name])
 @endforeach
 
 @php
@@ -47,8 +47,8 @@
             $header_tag = $embedded ? 'h5' : 'h4';
         @endphp
         @if($field_rows)
-            @include('Frontend.components.content_section_header', ['tag' => $header_tag, 'value' => $field_label])
-            @include('Frontend.components.bco_dmo_people_table', [
+            @include('FrontEnd.components.content_section_header', ['tag' => $header_tag, 'value' => $field_label])
+            @include('FrontEnd.components.bco_dmo_people_table', [
                 'field_rows' => $field_rows, 'post_type' => 'data_project'
             ])
         @endif

@@ -21,14 +21,14 @@
                 @endphp
 
                 @if($url)
-                        @include('Frontend.components.source_link', ['url' => $url, 'label' => $label])
+                        @include('FrontEnd.components.source_link', ['url' => $url, 'label' => $label])
                 @endif
 
             @elseif($entity->post_type === 'dataset')
-                @include('Frontend.layout.dataset_content', ['entity' => $entity ] )
+                @include('FrontEnd.layout.dataset_content', ['entity' => $entity ] )
 
             @elseif($entity->post_type === 'data_project')
-                @include('Frontend.layout.data_project_content', ['entity' => $entity, 'embedded' => false ] )
+                @include('FrontEnd.layout.data_project_content', ['entity' => $entity, 'embedded' => false ] )
             @endif
 
             @php
@@ -37,8 +37,8 @@
 
             @if(count($related_entities))
                 <div class="related">
-                    @include('Frontend.components.content_section_header', ['tag' => 'h4', 'value' => 'Related Items'])
-                    @include('Frontend.layout.related_entities', ['entities' => $related_entities])
+                    @include('FrontEnd.components.content_section_header', ['tag' => 'h4', 'value' => 'Related Items'])
+                    @include('FrontEnd.layout.related_entities', ['entities' => $related_entities])
                 </div>
             @endif
 

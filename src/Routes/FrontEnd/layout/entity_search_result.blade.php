@@ -18,19 +18,19 @@
     <div class="container">
 
         <div class="head">
-            @include('Frontend.components.query_types', ['query_types' => $query_types])
-            @include('Frontend.components.date', ['date_info' => $date_info])
+            @include('FrontEnd.components.query_types', ['query_types' => $query_types])
+            @include('FrontEnd.components.date', ['date_info' => $date_info])
         </div>
 
         @if($show_organization)
-            @include('Frontend.components.organization', ['link' => true, 'organization' => $entity->get_organization_info()])
+            @include('FrontEnd.components.organization', ['link' => true, 'organization' => $entity->get_organization_info()])
         @endif
 
         @if($entity->post_type === 'dataset' && $entity->acf_fields['dataset_instruments'])
-            @include('Frontend.components.dataset_instrument_links', ['instruments' => $entity->acf_fields['dataset_instruments']])
+            @include('FrontEnd.components.dataset_instrument_links', ['instruments' => $entity->acf_fields['dataset_instruments']])
         @endif
 
-        @include('Frontend.components.title', [
+        @include('FrontEnd.components.title', [
             'title' => $entity->post_title, 'id' => $entity->post_id, 'is_new' => $entity->is_new(),
             'link' => true, 'ext' => $title_link_external, 'modal' => $title_link_modal,
             'external_url' => $entity->get_external_url(), 'permalink' => $entity->permalink
@@ -41,18 +41,18 @@
                 $data_projects = $entity->get_related_entities('data_project')
             @endphp
             @if(count($data_projects))
-                @include('Frontend.components.dataset_project_link', ['projects' => $data_projects])
+                @include('FrontEnd.components.dataset_project_link', ['projects' => $data_projects])
             @endif
         @endif
 
         @if(count($people))
-            @include('Frontend.components.people_links', [
+            @include('FrontEnd.components.people_links', [
                 'people' => $people, 'post_type' => $entity->post_type, 'display' => 'short'
             ])
         @endif
 
         @if($entity->post_type === 'publication' && $entity->acf_fields['publication_contribution_number'])
-            @include('Frontend.components.publication_contribution_number', ['contribution_number' => $entity->acf_fields['publication_contribution_number']])
+            @include('FrontEnd.components.publication_contribution_number', ['contribution_number' => $entity->acf_fields['publication_contribution_number']])
         @endif
 
         @if($show_excerpt)

@@ -9,6 +9,6 @@ $entity = new C_DEBI_Theme\Entity($post);
 
 <div class="full-item">
     <?php
-        echo $c_debi_theme->blade_runner->run('Frontend.layout.entity_full', [ 'entity' => $entity, ]);
+        echo $c_debi_theme->blade_runner->run('FrontEnd.layout.entity_full', [ 'entity' => $entity, ]);
     ?>
 </div>
